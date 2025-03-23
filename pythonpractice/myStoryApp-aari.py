@@ -5,10 +5,13 @@ import streamlit as st
 
 from openai import OpenAI
 
-client = OpenAI(
-        api_key="sk-proj-gHRNyP74M7CA1YoUeym1T3BlbkFJTNnve5K5i77VaKIyjF4e"
-	#os.environ.get("OPENAI_API_KEY")
-)
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+api_key = os.getenv("API_KEY")
+
 
 role = f"""
 
