@@ -38,3 +38,5 @@ if __name__ == "__main__":
     nums5 = [0, 0, 0, 0, 0]
     moveZeroes(nums5)
     print(nums5)  # Output: [0, 0, 0, 0, 0]
+
+'''
