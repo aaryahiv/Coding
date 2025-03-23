@@ -1,3 +1,14 @@
+class Solution:
+    def moveZeroes(self, nums):
+        left = 0  # Pointer to track where to place the next non-zero element
+
+        for right in range(len(nums)):
+            if nums[right] != 0:
+                nums[left], nums[right] = nums[right], nums[left]
+                left += 1
+
+
+'''
 def moveZeroes(nums):
     left = 0  # Pointer to track where to place the next non-zero element
 
@@ -27,3 +38,5 @@ if __name__ == "__main__":
     nums5 = [0, 0, 0, 0, 0]
     moveZeroes(nums5)
     print(nums5)  # Output: [0, 0, 0, 0, 0]
+
+'''
